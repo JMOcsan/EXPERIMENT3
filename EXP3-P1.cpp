@@ -2,25 +2,25 @@
 #include<conio.h>
 
 using namespace std;
-int arr[10], b, a, L, S, N;
+int arr[15], b, a, L, S, N;
 double ttl=0, avg=0;
 
 int main()
 
 {
-	cout << "This array takes 10 elements only." << endl;
-	cout << "Type in 10 integers: ";
+	cout << "This array takes 15 elements only." << endl;
+	cout << "Type in 15 integers: ";
 
-	for (a = 0; a < 10; a++)
+	for (a = 0; a < 15; a++)
 	{
 		cin >> arr[a];
 		ttl += arr[a];
-		avg = ttl / 10;
+		avg = ttl / 15;
 	}
 	
-	for (a = 0; a < 10; a++)
+	for (a = 0; a < 15; a++)
 	{
-		for (b = a + 1; b < 10; b++)
+		for (b = a + 1; b < 15; b++)
 		{
 			if (arr[a] > arr[b])
 			{
@@ -29,7 +29,7 @@ int main()
 				arr[b] = N;
 			}
 		}
-		L= arr[9];
+		L= arr[14];
 		S = arr[0];
 	}
 		
